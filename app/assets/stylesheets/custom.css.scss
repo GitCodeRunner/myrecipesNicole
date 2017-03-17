@@ -3,6 +3,10 @@ $navbar-default-bg: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  margin: 40px;
+}
+
 .center {
   text-align: center;
 }
@@ -79,4 +83,20 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+.description {
+  margin-top: 0;
+}
+
+.well a {
+  color: #FF2D55;
+}
+
+.chef_info {
+  margin-top: 10px;
+}
+
+.colormatch a {
+  color: #FF2D55;
 }
