@@ -10,7 +10,7 @@ class RecipesDeleteTest < ActionDispatch::IntegrationTest
   test 'successfully delete a rcipe' do
     get recipe_path(@recipe)
     assert_template 'recipes/show'
-    assert_select 'a[href=?]', recipe_path(@recipet), test: "Delete this recipe"
+    assert_select 'a[href=?]', recipe_path(@recipe), test: "Delete this recipe"
     assert_difference "Recipe.count", -1 do
       delete recipe_path(@recipe)
     end
